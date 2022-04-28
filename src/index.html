@@ -1,14 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
-    <link rel="stylesheet" href="styles/main.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="scss/main.css" />
+  <link rel="stylesheet" href="../fontawe/css/all.css">
+  <title>Benny's Burger</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-md d-flex justify-content-between px-2">
+      <div class="container">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-burger"></i> Benny's</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#idea">The idea</a>
+            <a class="nav-link" href="#news">News</a>
+            <a class="nav-link" href="#booking">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Benny's Burger</h1>
+      <h3>Hands down, best burger in town</h3>
+      <button><a href="#"> See the menu</a></button>
+    </header>
+    <section>
+      <h2 id="idea" class="my-5 text-center display-3">The idea</h2>
+
+      <div class="row justify-content-center gap-3 idea">
+        <!-- organic paragraph -->
+        <div class="card col-10 col-md-6 col-lg-4 border-0" style="width: 25rem">
+          <div class="d-flex justify-content-center">
+            <i class="fa-solid fa-hand-holding-hand display-4 "></i>
+          </div>
+          <h2 class="card-title text-center">100% organic</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ipsam
+            dolorem nisi repellat mollitia illum ad asperiores doloribus!
+            Obcaecati soluta magni, nam, officia error exercitationem voluptatum
+            esse laborum .
+          </p>
+        </div>
+        <!-- vegan paragraph -->
+        <div class="card col-10 col-md-6 col-lg-4 border-0" style="width: 25rem">
+          <div class="d-flex justify-content-center">
+            <i class="fa-solid fa-seedling display-4 "></i>
+          </div>
+          <h2 class="card-title text-center">Vegan</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ipsam
+            dolorem nisi repellat mollitia illum ad asperiores doloribus!
+            Obcaecati soluta magni, nam, officia error exercitationem voluptatum
+            esse laborum .
+          </p>
+        </div>
+        <!-- no animal cruelty -->
+        <div class="card col-10 col-md-6 col-lg-4 border-0" style="width: 25rem">
+          <div class="d-flex justify-content-center">
+            <i class="fa-solid fa-paw display-4"></i>
+          </div>
+          <h2 class="card-title text-center">No animal cruelty</h2>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ipsam
+            dolorem nisi repellat mollitia illum ad asperiores doloribus!
+            Obcaecati soluta magni, nam, officia error exercitationem voluptatum
+            esse laborum .
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="new" id="news">
+      <h2 class="text-center display-3 p-5">What's new at Benny's</h2>
+      <div class="row my-5 justify-content-center align-items-center gap-4">
+        <!-- 1.card with a group of people eating burger -->
+        <div class="card" style="width: 18rem">
+          <img src="images/dan-gold-E6HjQaB7UEA-unsplash.jpg" class="card-img-top"
+            alt="a group of people having burger" />
+          <div class="card-body">
+            <h4 class="card-title">Win a free lunch</h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+              aliquam temporibus dolorem, quam officia ullam harum debitis unde
+              ipsam pariatur.
+            </p>
+            <a href="#" class="btn btn-primary">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <!-- 2.card with bar -->
+        <div class="card d-sm-none d-md-block" style="width: 18rem">
+          <img src="images/jon-tyson-_j-sUa8lHy4-unsplash.jpg" class="card-img-top" alt="a live bar banner" />
+          <div class="card-body">
+            <h4 class="card-title">Live music every Thursday</h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+              aliquam temporibus dolorem, quam officia ullam harum debitis unde
+              ipsam pariatur.
+            </p>
+            <a href="#" class="btn btn-primary">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <!-- 3.card with double burger -->
+        <div class="card d-sm-none d-md-none d-lg-block" style="width: 18rem">
+          <img src="images/mae-mu-I7A_pHLcQK8-unsplash.jpg" class="card-img-top" alt="a place of 2 double burger" />
+          <div class="card-body">
+            <h4 class="card-title">Double deck</h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+              aliquam temporibus dolorem, quam officia ullam harum debitis unde
+              ipsam pariatur.
+            </p>
+            <a href="#" class="btn btn-primary">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <!-- 4.card with bbq -->
+        <div class="card d-sm-none d-md-none d-xl-block" style="width: 18rem">
+          <img src="images/zac-cain-jLzukAj_PhQ-unsplash.jpg" class="card-img-top" alt="Burger on grill" />
+          <div class="card-body">
+            <h4 class="card-title">BBQ Party 25.07</h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+              aliquam temporibus dolorem, quam officia ullam harum debitis unde
+              ipsam pariatur.
+            </p>
+            <a href="#" class="btn btn-primary">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Booking form -->
+    <div id="booking" >
+      <h2 class="display-3 text-center">Book a table</h2>
+      <div class="col-md-4 mx-auto">
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Full name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" />
+        </div>
+      </div>
+      <div class="col-md-4 mx-auto">
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Email address</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="name@example.com" />
+        </div>
+      </div>
+      <div class="col-md-4 mx-auto">
+        <label for="form" class="form-label">Number of guests</label>
+
+        <select id="form" class="form-select" aria-label="Default select example">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div class="col-md-4 mx-auto">
+        <div class="my-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Addition notes</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+      <footer class="foot text-end">Copyright 2019</footer>
+    </div>
+
     <!-- Custom scripts, edit above this line -->
     <script src="scripts/index.js"></script>
-  </body>
+</body>
+
 </html>
